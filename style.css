@@ -1,0 +1,42 @@
+html {
+    background-color: #EDEDEA;
+}
+
+.t-horizontal {
+    background-color: #A2D7D8;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+
+.b-horizontal {
+    background-color: #A2D7D8;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+
+.l-border {
+    background-color: #A2D7D8;
+    position: relative;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.r-border {
+    background-color: #A2D7D8;
+    position: relative;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.content {
+    margin-left: 21%;
+    margin-right: 1%;
+}

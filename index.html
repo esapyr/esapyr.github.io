@@ -2,177 +2,122 @@
 <html>
 <head>
   <title>Homepage of Ryan Serazin</title>
+  <link rel="stylesheet" href="style.css">
+  <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-56331743-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-  <style type="text/css">
-    html {
-      height: 100%;
-    }
-    body {
-      min-height: 100%;
-      margin: 0;
-      border-style: solid;
-      border-left-width: 150px;
-      border-right-width: 150px;
-      border-top-width: 50px;
-      border-bottom-width: 50px;
-      border-color: #A2D7D8;
-      background-color: #EDEDEA;
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-      font-size: 50px;
-    }
-    #header ul, li {
-      display: inline;
-      list-style: none;
-      text-align: center;
-      margin: 3px;
-    }
-    a {
-      text-decoration:none;
-      color: #333;
-    }
-    #header {
-      margin: 40px auto;
-      width: 50%;
-      text-align: center;
-      margin-top: -35px;
-    }
-    #left {
-      width: 49%;
-      float: left;
-    }
-    #right {
-      border-left-style: solid;
-      border-left-color: #D7D1CA;
-      border-left-width: 2px;
-
-      text-align: left;
-      width: 50%;
-      float: right;
-      margin-right: 14px;
-    }
-    #left h2 {
-      text-align: right;
-      color: #333;
-      margin-right: 15px;
-      margin-top: -5px;
-      margin-bottom: 10px;
-    }
-    #right h2 {
-      text-align: left;
-      color: #333;
-      margin-left: 15px;
-      margin-bottom: 10px;
-      margin-top: -5px;
-    }
-    #right p {
-      text-align: left;
-      color: #333;
-      margin-left: 15px;
-      margin-bottom: 5px;
-      margin-top: 5px;
-      margin-right: 65px;
-    }
-    #right ul {
-      margin-top: -15px;
-    }
-    #left p {
-      text-align: right;
-      color: #333;
-      margin-right: 15px;
-      margin-bottom: 10px;
-      margin-top: 5px;
-      margin-left: 65px;
-    }
-    #left ul, li {
-      margin-top: -25px;
-    }
-  </style>
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+  <!--<![endif]-->    
 </head>
 
-  <body>
-    <h1>Ryan Serazin</h1>
-    <div id="header">
-      <ul>
-        <li><a href="http://www.twitter.com/esapyr">Twitter </a></li>
-        <li><a href="http://www.github.com/esapyr">Github</a></li>
-        <li><a href="https://medium.com/@esapyr">Blog</a></li>
-        <li><a href="">Resume</a></li>
-        <li><a href="mailto:rps9530@rit.edu">Contact</a></li>
-      </ul>
-      <p>I'm a fourth year computer science student at <i><b><a href="http://www.cs.rit.edu">RIT</a></b></i>. I'm interested in a lot of things but currently clojure and web dev have been distraction me from
-         my responsibilities the most.
-      </p>
+<body>
+    <div class="layout pure-g">
+        <div class="t-horizontal"></div>
+        <div class="l-border pure-u-1-5"><!-- border --></div>
+
+        <div class="content pure-u-3-5">
+            <div class="header pure-g">
+                <div class="pure-u-1-4">
+                    <h1>Ryan Serazin</h1>
+                </div>
+
+                <div class="pure-u-3-4">
+                    <div class="pure-menu pure-menu-open pure-menu-horizontal" style="background-color: #EDEDEA; padding: 1em;">
+                        <ul>
+                            <li><a href="https://twitter.com/esapyr"><i class="fa fa-twitter fa-2x"></i></a></li>
+                            <li><a href="https://github.com/esapyr/"><i class="fa fa-github fa-2x"></i></a></li>
+                            <li><a href="https://medium.com/@esapyr"><i class="fa fa-medium fa-2x"></i></a></li>
+                            <li><a href="#"><span class="fa-stack fa-1x">
+                                            <i class="fa fa-square-o fa-stack-2x"></i>
+                                            <i class="fa fa-align-left fa-stack-1x"></i>
+                                            </span></a></li>
+                            <li><a href="mailto:rps9530@rit.edu"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pure-u-1">
+                    <p>I'm a fourth year computer science student at <i><b><a href="http://www.cs.rit.edu">RIT</a></b></i>. 
+                    I'm interested in a lot of things but currently clojure and web dev have been distraction me from my 
+                    responsibilities the most.</p>
+                </div>
+            </div>
+
+            <div class="body pure-g">
+                <div class="pure-u-md-1-2 pure-u-1">
+                    <div class="pure-g">
+                        <div class="pure-u-1">
+                            <h2>Personal Projects</h2>
+                            <p>Wrote an interpreter for McCarthy's original <i><b><a href="https://github.com/esapyr/rusty-lisp">lisp</a></b></i> in rust</p>
+                            <p>Wrote an asynchronous graphical client server<i><b><a href="https://github.com/esapyr/chatter">chat application</a></b></i>in clojure using the aleph library</p>
+                            <p>Hacked on a <i><b><a href="https://github.com/Paleolithic/48hrs">django application</a></b></i> during 
+                                <i><b><a href="http://www.rit48.com/">rit48</a></b></i> that connected students looking to build a team for a personal project.</p>
+                            <p>Hacked on a <i><b><a href="https://github.com/esapyr/Penny_wars">flask app</a></b></i> to help manage team and point information for an annual penny wars philanthropic event.</p>
+                            <p>Hacked on a <i><b><a href="https://github.com/esapyr/hourly">clojure app</a></b></i> to help manage service hour reporting.</p>
+                            <p>Service Chair for the <i><b><a href="http://kdrib.org/">Iota Beta chapter</a></b></i> of <i><a href="http://www.kdr.com/">Kappa Delta Rho</a></i> from the 2013 spring semester to the 2014 fall semester.</p>
+		        </div>
+
+                        <div class="pure-u-1">
+                            <h2>Education</h2>
+                            <p>B.S. of Computer Science expected in 2016 with a minor in philosophy</p>
+                            <p><b>Relevant Courses:</b> Data Mining, Functional Programming Skills, Software Engineering, Artificial Intelligence, Programming Language Concepts, Professional Communication,
+                            Concepts of Computer Systems, Operating Systems, Computer Science Theory, Data Communication, Analysis of Algorithms, Parallel and Distributed Systems.</p>
+                        </div>
+
+                        <div class="pure-u-1">
+                            <h2>Skills</h2>
+                            <ul>
+                                <li><p>Clojure, Rust, Python, Java &#62; Javascript, HTML/CSS &#62; Haskell, PHP, C/C++</p></li>
+                                <li><p>Ring/Compojure &#62; Flask, Django &#62; Angular, Nodejs</p></li>
+                                <li><p>Vim &#62; Eclipse, Lighttable, Visual Studio</p></li>
+                                <li><p>GNU/Linux &#62; Windows 8/7, OS X</p></li>
+                                <li><p>git</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pure-u-md-1-2 pure-u-1">
+                    <h2>Internships and Co-ops</h2>
+                    <div class="pure-g">
+                        <div class="pure-u-1">
+                            <p><i><b><a href="http://www.tourbuzz.net/">Tourbuzz,</a></b></i> Atlanta GA. Summer 2014, Software Engineering Intern.</p>
+                            <ul>
+                                <li><p>Wrote a php app that routed incoming support calls to the highest priority support member available,
+                                        while also finding the incoming caller's information and sending it to the support member over hipchat.</p></li>
+                                <li><p>Wrote clojure app that translated dieselpoint queries into elasticsearch queries on the the fly using
+                                        a hand writen context free grammar.</p></li>
+                                <li><p>Architected a javascript app that used Angular and D3 to find trends in customer information over time.</p></li>
+                            </ul>
+                        </div>
+                        <div class="pure-u-1">
+                            <p><i><b><a href="http://www.ntid.rit.edu/">National Technical Institue for the Deaf,</a></b></i> Rochester, NY. Summer 2013, Part-Time Application Developer.</p>
+                            <ul>
+                                <li><p>Wrote and compiled a very limited graphical front end for editing video with FFMPEG using Tkinter in python.</p></li>
+                                <li><p>Maintained a course management system written in javascript and ASP classic.</p></li>
+                            </ul>
+                        </div>
+                        <div class="pure-u-1">
+                            <p><i><b><a href="http://www.macleanfoggcs.com/">Maclean-Fogg,</a></b></i> Royal Oak, MI. Summer 2012, Part-Time Information Technology Intern.</p>
+                            <ul>
+                                <li><p>Designed and implemented an ASP.net website and backing database for all Maintenance Department Staff at Maclean-Fogg's facilities to track part usage.</p></li>
+                                <li><p>Wrote a small C# that organized internal documentation that had been recently been digitized for our paperless information system.</p></li>
+                                <li><p>Wrote a VBA macro for outlook that extracted tooling shortage messages sent by the ERP system and entered them into a database.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pure-u-1"> <!-- border --></div>
+        </div>
+        <div class="r-border pure-u-1-5"> <!-- border --></div>
+        <div class="b-horizontal"></div>
     </div>
-
-    <div id="right">
-      <div id="experience">
-        <h2>Summer Internships and Co-ops</h2>
-        <p><i><b><a href="http://www.tourbuzz.net/">Tourbuzz,</a></b></i> Atlanta GA. Summer 2014, Software Engineering Intern.</p>
-        <ul>
-          <li><p>Wrote a php app that routed incoming support calls to the highest priority support member available, 
-                 while also finding the incoming caller's information and sending it to the support member over hipchat.</p></li>
-          <li><p>Wrote clojure app that translated dieselpoint queries into elasticsearch queries on the the fly using
-                 a hand writen context free grammar.</p></li>
-          <li><p>Architected a javascript app that used Angular and d3 to find trends in customer information over time.</p></li>
-        </ul>
-
-        <p><i><b><a href="http://www.ntid.rit.edu/">National Technical Institue for the Deaf,</a></b></i> Rochester, NY. Summer 2013, Part-Time Application Developer.</p>
-        <ul>
-          <li><p>Wrote and compiled a very limited graphical front end for editing video with FFMPEG using Tkinter in python.</p></li>
-          <li><p>Maintained a course management system written in javascript and ASP classic.</p></li>
-        </ul>
-
-        <p><i><b><a href="http://www.macleanfoggcs.com/">Maclean-Fogg,</a></b></i> Royal Oak, MI. Summer 2012, Part-Time Information Technology Intern.</p>
-        <ul>
-          <li><p>Designed and implemented an ASP.net website and backing database for all Maintenance Department Staff at Maclean-Fogg's facilities to track part usage.</p></li>
-          <li><p>Wrote a small C# that organized internal documentation that had been recently been digitized for our paperless information system.</p></li>
-          <li><p>Wrote a VBA macro for outlook that extracted tooling shortage messages sent by the ERP system and entered them into a database.</p></li>
-        </ul>
-      </div>
-    </div>
-
-    <div id="left">
-      <div id="projects">
-        <h2>Extra-Curriculars</h2>
-        <p>Implemented McCarthy's original <i><b><a href="https://github.com/esapyr/rusty-lisp">lisp</a></b></i> in rust</p>
-        <p><i><b><a href="https://github.com/esapyr/chatter">Chatter</a></b></i> an asynchronous command line chat app written with aleph and clojure</p>
-        <p>Hacked on a <i><b><a href="https://github.com/Paleolithic/48hrs">django app</a></b></i> for Rit48 that connected students looking to build a team for a personal project.</p>
-        <p>Hacked on a <i><b><a href="https://github.com/esapyr/Penny_wars">flask app</a></b></i> to help manage team and point information for an annual penny wars philanthropic event.</p>
-        <p>Hacked on a <i><b><a href="https://github.com/esapyr/hourly">clojure app</a></b></i> to help manage service hour reporting.</p>
-        <p>Service Chair for the <i><b><a href="http://kdrib.org/">Iota Beta chapter</a></b></i> of <i><a href="http://www.kdr.com/">Kappa Delta Rho</a></i> from the 2013 spring semester to the 2014 fall semester.</p>
-        
-      </div>
-      <div id="school">
-        <h2>Curriculars</h2>
-        <p>B.S. of Computer Science expected in 2016 with a minor in philosophy</p>
-        <p><b>Relevant Courses:</b> Software Engineering, Artificial Intelligence, Programming Language Concepts, Professional Communication, 
-           Concepts of Computer Systems, Operating Systems, Computer Science Theory, Data Communication, Analysis of Algorithms, Parallel and Distributed Systems.</p>
-      </div>
-      <div id="skills">
-        <h2>Buzzwords for resume sniffers</h2>
-        <ul>
-          <li><p>Clojure, Python, Java &#62; Javascript, HTML/CSS &#62; Haskell, PHP, C/C++</p></li>
-          <li><p>Ring/Compojure &#62; Flask, Django &#62; Angular, Nodejs</p></li>
-          <li><p>Vim &#62; Eclipse, Lighttable, Visual Studio</p></li>
-          <li><p>GNU/Linux &#62; Windows 8/7, OS X</p></li>
-          <li><p>git</p></li>
-        </ul>
-      </div>
-    </div>
-  </body>
+</body>
 </html>
