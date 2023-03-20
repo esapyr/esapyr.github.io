@@ -1,43 +1,863 @@
-<!doctype html>
-<html>
-<head>
-  <title>Ryan Serazin</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
-</head>
 
+<!-- saved from url=(0040)file:///Users/ryan/Downloads/resume.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Ryan Serazin's Personal Site (Under Construction)</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 1200px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+/*
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+*/
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+</style></head>
 <body>
-    <div class="container" style="margin-top: 70px;">
-      <div class="panel panel-default">
-          <div class="panel-body">
-              <div class="row">
-                  <div class="col-md-4 img-col">
-                      <img src="face.jpg" class="img-responsive img-rounded">
-                  </div>
-                  <div class="col-md-8">
-                      <h1>Hi, I'm <b>Ryan Serazin</b></h1>
-											</br>
-											<p>I'm a fullstack/backend engineer interested in web development with a focus on backend systems and data integration. I'm currently looking for work, so feel free to <i><b><a href="mailto:ryan@seraz.in">reach out</a></b></i> with any roles you're looking to fill!</p>
-											<br/>
-											<p>I graduated from <i><b><a href="http://www.rit.edu/">The Rochester Institute of Technology</a></i></b> in 2016 with a bachelor's degree in computer science and a minor in philosophy.</p>
-											</br>
-											<p>I primarily work using AWS tools in <i><b><a href="https://www.ruby-lang.org/en/">ruby</a></b></i> using <i><b><a href="https://rubyonrails.org/">rails</a></b></i> but enjoy using <i><b><a href="https://clojure.org/">clojure</a></b></i> in my spare time.</p>
-											</br>
+  <article id="acf36f91-0bba-49b8-94cf-1451d339e161" class="page sans">
+    <div class="page-body">
+      <div id="0d592177-e36b-4dc1-a326-666d2e14c2ef" class="column-list">
+        <div id="541736a8-425b-4df1-89f0-2a0a01718d5e" style="width:25%" class="column">
+	  <img src="headshot.jpg" style="border-radius:50%; margin-top:1.75rem">
+          <h1 id="533d34f2-ec36-4aa9-8404-0d32a8d91d4b" style="margin-top: 1rem; text-align:center;" class="">Ryan Serazin</h1>
+          <h3 id="da86f044-616d-4918-828e-7d6ce1dc1eca" style="text-align: center" class="block-color-orange_background">Contact Info</h3>
+          <ul id="b46041a6-6e1b-4765-bb9e-634cdbb3f463" class="toggle">
+            <li>
+              <details open="">
+                <summary><strong>📥 </strong>Email</summary>
+                <p id="5cbcd151-591b-400a-a47e-f3558e75434f" class=""><a href="mailto:ryan@seraz.in">ryan@seraz.in</a></p>
+              </details>
+            </li>
+          </ul>
+          <ul id="cbbc367e-4533-4b3c-bbcd-95cb6d9a7736" class="toggle">
+            <li>
+              <details open="">
+                <summary>📁 Github</summary>
+                <p id="4be92b3a-cd53-4aae-8abd-6380b9de0896" class=""><a href="https://www.github.com/esapyr">github.com/esapyr</a></p>
+              </details>
+            </li>
+          </ul>
+          <ul id="51d457c8-5086-4b71-941f-3edd8aac4c7f" class="toggle">
+            <li>
+              <details open="">
+                <summary>🗣️ Linkedin</summary>
+                <p id="6cc7d845-0e11-4c78-9331-0d45a67f8717" class=""><a href="http://linkedin.com/in/ryan-serazin-657b9865/">linkedin.com/in/ryan-serazin</a></p>
+              </details>
+            </li>
+          </ul>
+          <h3 id="14754777-9b29-4256-acca-fa5546300df8" style="text-align: center" class="block-color-blue_background">Education</h3>
+          <p id="49671b87-4419-498a-9fd6-dce50bb090e1" class="">
+	    <strong>Rochester Institute of Technology </strong>
+        <br>
+	    <em>Class of '16
+		    <br>
+		    <br>
+            </em>B.S in Computer Science, <br> 
+Minor in Philosophy
+          </p>
+          <h3 id="e005cf38-9cd5-4a22-afc2-62086f10052e" style="text-align: center" class="block-color-red_background">Skills</h3>
+          <ul id="5733a9df-094c-4180-9092-57673cee5d94" class="toggle">
+            <li>
+              <details open="">
+                <summary>✏️ <strong><em>Languages</em></strong></summary>
+                <p id="fe535896-1033-4052-bdcc-c78d05392801" class="">Ruby, Clojure/Clojurescript, Typescript, Javascript, Python, Java</p>
+              </details>
+            </li>
+          </ul>
+          <ul id="f7031922-8248-476f-9105-e891a27a1628" class="toggle">
+            <li>
+              <details open="">
+                <summary>⚒️ <strong><em>Tools</em></strong></summary>
+                <p id="ce320af4-9063-47a2-b8af-6710319c74ae" class="">Apache Airflow, Amazon Alexa, Ansible, Athena, ArgoCD, AWS Lambda, AWS, DataDog, Dynamodb, Docker, Elasticsearch, Git, Github Actions, Kubernetes, Postgresql, Redshift/Spectrum, Redis, Solr, Snowflake, Terraform, Vim.</p>
+              </details>
+            </li>
+          </ul>
+          <ul id="419b722f-979f-4ae9-a98b-124a3cb6268f" class="toggle">
+            <li>
+              <details open="">
+                <summary>🏗️ <strong><em>Frameworks</em></strong></summary>
+                <p id="6c9de4fb-47a5-493c-9d87-489a2230bedd" class="">Ruby on Rails, NodeJS, Padrino/Sinatra, NextJS, GraphQL, React, Redux, Alt</p>
+                <p id="16c43f03-acf7-46e0-ae80-0699070ca0d8" class=""></p>
+                <p id="5d7e838e-7585-4cea-9cf2-8aa3e7f17dd5" class=""></p>
+              </details>
+            </li>
+          </ul>
+        </div>
+        <div id="bd68637c-8c11-42e8-a86c-a91235a1263d" style="width:75%;margin-top:2.5rem" class="column">
+          <h3 id="b9f3a3bd-1c0c-425c-8378-07f4ac84b20a" style="text-align: center" class="block-color-teal_background">Work Experience</h3>
+          <ul id="f3e85bdb-a557-436b-9502-fad563e925ef" class="toggle">
+            <li>
+              <details open="">
+                <summary>🌿 <strong>Leafly</strong> - Senior Software Engineer <em>(May 2022 - April 2023)</em></summary>
+                <ul id="05a2f9eb-95d0-4960-9b3f-6a0448d4c3f4" class="toggle">
+                  <li>
+                    <details open="">
+			    <summary><em>Product Engineering Team</em></summary>
+                      <p id="7e977815-5798-4775-a806-90a0a53b28c9" class="">Primarily responsible for technical leadership, mentorship and project planning. This included gathering project requirements from various PMs, writing technical plans for projects, and pairing with different engineers working on those tickets.</p>
+                      <ul id="9adcd05b-dacf-4390-a559-926be2431080" class="bulleted-list">
+                        <li style="list-style-type:disc">Proposed, planned and led multi-cycle project to unify behavior and display logic for search filtering across the web and mobile site. Project was delivered on time, unblocking key revenue-generating initiatives and allowing the reduction of frontend code needed to display filters as well as the work required to add new filters in the future.
 
-										</br>
-                  </div>
-              </div>
-          </div>
-           <div class="panel-heading">
-              <div class="btn-group btn-group-justified">
-								<a class="btn btn-default" href="Ryan_Serazin_Resume.pdf"><span><i class="fa fa-file-alt fa-large"></i> <i class="fa fa-sub fa-user"></i></span></a>
-                <a class="btn btn-default" href="https://github.com/esapyr/"><i class="fab fa-github"></i></span></a>
-                <a class="btn btn-default" href="https://www.linkedin.com/in/ryan-serazin-657b9865/"><i class="fab fa-linkedin"></i></span></a>
-                <a class="btn btn-default" href="mailto:ryan@seraz.in"><b><i class= "fas fa-envelope"></i></b></span></a>
-              </div>
-          </div>         
+</li>
+                      </ul>
+                      <ul id="11460f05-d2a9-4543-8a42-d85da81bdd92" class="bulleted-list">
+                        <li style="list-style-type:disc">Delivered a key revenue-driving project to support serving multiple marquee-style ads to a single placement. Project shipped during an engineering team restructuring, with enough time to train sales staff before the new quarter started.</li>
+                      </ul>
+                      <ul id="2fd5694f-83fd-4a47-abeb-230ad5179ee1" class="bulleted-list">
+                        <li style="list-style-type:disc">Mentored junior engineers in git and testing best practices while leading a cross-team project to implement and standardize code coverage reporting across apps in our CI/CD pipeline, and create a centralized dashboard for tracking coverage stats for teams to use to drive testing improvements.</li>
+                      </ul>
+                    </details>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+          <ul id="e1413405-80c4-4c3a-8004-5cad961d4e66" class="toggle">
+            <li>
+              <details open="">
+		      <summary>🎲 <strong>Jackpocket</strong> - Software Engineer <em>(August 2021 - May 2022)</em></summary>
+                <ul id="b2fcede8-5a09-47b0-afdb-d2d824cd80ff" class="toggle">
+                  <li>
+                    <details open="">
+                      <summary><em>Operations Team</em></summary>
+                      <p id="b2ea303c-0012-466d-8745-4677e60484a0" class="">Primarily responsible for developing and maintaining internal tools used to automate lottery ticket buying and redeeming, as well as aiding in the rewrite of our monolithic Ruby on Rails app into microservices written in Elixir.</p>
+                      <ul id="e95fbfd5-58b0-4232-a84a-1a16ec35ffe1" class="bulleted-list">
+                        <li style="list-style-type:disc">Led project to automate shipping label generation for winning tickets using an Elixir micro-service. Launched working MVP that integrated with the UPS shipping API speeding up ticket generation by an order of magnitude.</li>
+                      </ul>
+                    </details>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+          <ul id="37b4a12f-4ca3-41db-87f8-83391cba60e5" class="toggle">
+            <li>
+              <details open="">
+                <summary>📚 <strong>BookBub</strong> - Full-Stack Engineer <em>(June 2016  - June 2021)</em></summary>
+                <ul id="fdf3a069-0c07-4ebb-b1fb-28f3ec66b016" class="toggle">
+                  <li>
+                    <details open="">
+                      <summary><em>Partner/Admin Platform Team</em> <em>(2020 - 2021)</em></summary>
+                      <p id="0cec954c-882e-401f-8984-121eb319caa3" class="">Primarily led projects to automate and improve processes on our business development, editorial, and support teams in order to scale our audiobook retailing product. </p>
+                      <ul id="487c4fa5-0cdc-4c9c-9502-3906b658e17f" class="bulleted-list">
+                        <li style="list-style-type:disc">Led team in researching, designing, implementing, and launching an Alexa Skill MVP to allow customers to listen to their audiobook library.</li>
+                      </ul>
+                      <ul id="81f3c9f4-ce99-49a7-9ea1-6b4951a9efb3" class="bulleted-list">
+                        <li style="list-style-type:disc">Designed and implemented an admin page to automate approved audiobook refund book-keeping and messaging for the support team.</li>
+                      </ul>
+                      <ul id="b8d66236-61e5-43cb-919a-40155441cbfa" class="bulleted-list">
+                        <li style="list-style-type:disc">Implemented an ETL pipeline using Snowflake to calculate relative sales performance for past promotions to aid our business development admins in choosing promotions.</li>
+                      </ul>
+                    </details>
+                  </li>
+                </ul>
+                <ul id="414b0b1d-0ada-4d83-86a3-5ec8994236c0" class="toggle">
+                  <li>
+                    <details open="">
+                      <summary><em>Ad Platform Team</em> <em>(2017 - 2020)</em></summary>
+                      <p id="f54a55c9-5ef9-4afc-a5af-3e5152ed1fa9" class="">Key member of team responsible for scaling CPM-bid email-only ad platform to support CPC bidding, and serving ads to the website; enabling the onboarding of hundreds of partners.</p>
+                      <ul id="bfcffe4a-a9bf-4ed9-8d57-fa2644006950" class="bulleted-list">
+                        <li style="list-style-type:disc">Rewrote our core ad auctioning service in Clojure with a senior new hire. Reduced deploy times from hours to minutes and enabled auction time, loss-preventing, adjustments to CPC bids.</li>
+                      </ul>
+                      <ul id="4e8c74fc-6b40-4ef8-9d41-1514d213b6c7" class="bulleted-list">
+                        <li style="list-style-type:disc">Rearchitected the distributed locking mechanism for our ad serving service in order to reduce the number of servers needed to serve ads by half.</li>
+                      </ul>
+                      <ul id="aee83e5b-d071-4bfa-b403-760f8efe5f23" class="bulleted-list">
+                        <li style="list-style-type:disc">Improved the speed of the estimate reach calculation shown to partners as they selected targeting for their ads from 2min+ to sub 500ms by moving calculation from Redshift to Solr/Lucene.</li>
+                      </ul>
+                      <ul id="8f74af8e-81f4-454f-bcca-9c176f289f1b" class="bulleted-list">
+                        <li style="list-style-type:disc">Implemented CPC bidding in our auction service by using an ads historical and estimated CTR to compare its CPC bid with other CPM bids at auction time.</li>
+                      </ul>
+                    </details>
+                  </li>
+                </ul>
+                <ul id="17b782e0-5da2-425a-9087-e7a4f6b84a4d" class="toggle">
+                  <li>
+                    <details open="">
+                      <summary><em>Data Engineering Team</em> <em>(2016 - 2017)</em></summary>
+                      <p id="881b20fa-67fd-41e7-a34c-62c47906c7b9" class="">Primarily responsible for integrating book data throughout site, and writing services to ingest book data from multiple sources.</p>
+                      <ul id="195a6e36-0f15-40dc-acf4-927032e07503" class="bulleted-list">
+                        <li style="list-style-type:disc">Part of team that developed and maintained a distributed rate limited per API data-fetching service written in Clojure that returned book data in a common format. Used throughout site to refresh book data</li>
+                      </ul>
+                    </details>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+          <ul id="e9ed5f87-8f8a-4f68-89c7-ee32f2b30ee9" class="toggle">
+            <li>
+              <details open="">
+                <summary>🏠 <strong>ShowcaseIDX</strong> - Software Engineering Co-op <em>(June 2015 - February 2016)</em></summary>
+                <ul id="d8cf2672-c039-464d-9b89-8e958e21c8ae" class="bulleted-list">
+                  <li style="list-style-type:disc">Responsible for Multiple Listing Service data pipeline that imported and cleaned data from over 60 MLS feeds and made over 5 million listings available on realtor's websites to search using Elasticsearch.</li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+          <p id="37776402-5ca2-4ea3-a3d7-d283d60ad37c" class=""></p>
+        </div>
       </div>
+      <p id="7696e021-b0b1-4d14-9f3b-dab2f6845d3e" class=""></p>
     </div>
-</body>
-</html>
+  </article>
+
+
+</body></html>
