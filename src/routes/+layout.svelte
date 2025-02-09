@@ -30,7 +30,9 @@
 					><li class="text-black-500 bg-blue-400 p-1 text-lg font-light">Blog</li></Link
 				>
 				<Link external={false} href="/Ryan_Serazin_Resume.pdf"
-					><li class="text-black-500 bg-yellow-400 p-1 text-lg font-light">Resume</li></Link
+					><li class="text-black-500 rounded-bl-lg bg-yellow-400 p-1 text-lg font-light">
+						Resume
+					</li></Link
 				>
 			</ul>
 		</div>
