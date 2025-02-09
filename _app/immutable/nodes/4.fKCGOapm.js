@@ -1,0 +1,1 @@
+import{t as a,b as r}from"../chunks/CEtktaMs.js";import"../chunks/DOAWTVhs.js";import{E as e}from"../chunks/BKz7707g.js";var p=a('<h1>Recent Blog Posts</h1> <ul><li><a href="/esapyr.github.io/blog/first_post">My Toolbox</a></li></ul>',1);function l(o){var t=p();e(2),r(o,t)}export{l as component};
