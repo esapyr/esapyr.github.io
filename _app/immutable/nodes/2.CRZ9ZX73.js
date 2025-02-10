@@ -1,1 +1,0 @@
-import"../chunks/Bg9kRutz.js";import{v as s}from"../chunks/BjPbOtBO.js";import{c as a,b as i}from"../chunks/atA4sN7I.js";import{s as p}from"../chunks/BYUVyYZU.js";import{A as n}from"../chunks/BiouGo5B.js";function h(r,t){n(r,{color:"blue",children:(e,l)=>{var o=a(),m=s(o);p(m,()=>t.children),i(e,o)},$$slots:{default:!0}})}export{h as component};

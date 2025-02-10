@@ -1,1 +1,0 @@
-import"../chunks/Bg9kRutz.js";import"../chunks/69_IOA4Y.js";import{t as p,b as r}from"../chunks/atA4sN7I.js";var a=p("<h1>How this blog works</h1>");function n(o){var t=a();r(o,t)}export{n as component};
