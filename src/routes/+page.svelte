@@ -15,11 +15,7 @@
 		<p class="text-lg">
 			I'm a Senior Full Stack Engineer currently based out of <Link href="https://rocwiki.org/"
 				>Rochester, NY</Link
-			>
-		</p>
-		<p class="text-lg">
-			I graduated from <Link href="https://www.rit.edu">R.I.T</Link> in 2016 with a major in Computer
-			Science and a minor in Philosophy
+			> with over ten years of experience builds products for the web.
 		</p>
 
 		<div>
@@ -29,7 +25,7 @@
 					Building ASP.net web forms to track factory floor repair part usage as an <span
 						class="font-semibold text-green-700">intern</span
 					>
-					for <Link href="https://www.macleanfoggcs.com/">MacLean-Fogg Component Solutions</Link>
+					for <Link href="https://www.macleanfoggcs.com/">MacLean-Fogg Component Solutions</Link>.
 				</li>
 				<li class="ml-8">
 					Building a simple graphical frontend for FFMPEG in Python as an <span
@@ -37,19 +33,19 @@
 					>
 					for the <Link href="https://www.rit.edu/ntid/"
 						>National Technical Institute for the Deaf</Link
-					>
+					>.
 				</li>
 				<li class="ml-8">
 					Building a simple Dieselpoint to ElasticSearch query translator as an <span
 						class="font-semibold text-green-700">intern</span
 					>
-					at <Link external href="https://www.tourbuzz.com/">TourBuzz LLC</Link>
+					at <Link external href="https://www.tourbuzz.com/">TourBuzz LLC</Link>.
 				</li>
 				<li class="ml-8">
 					Maintaining data pipelines and implemeting data cleaning tools as an <span
 						class="font-semibold text-green-700">intern</span
 					>
-					at <Link external href="https://showcaseidx.com/">Showcase IDX</Link>
+					at <Link external href="https://showcaseidx.com/">Showcase IDX</Link>.
 				</li>
 				<li class="ml-8">
 					Scaling the internal real-time ad auctioning platform as a <span
@@ -63,25 +59,25 @@
 						class="font-semibold text-yellow-700">Full Stack Engineer</span
 					>
 					at <Link href="https://www.bookbub.com/">BookBub</Link>
-					by building internal tools to manage transactions as well as an Alexa Skill
+					by building internal tools to manage transactions as well as an Alexa Skill.
 				</li>
 				<li class="ml-8">
 					Building internal operational tools as a <span class="font-semibold text-yellow-700"
 						>Full Stack Engineer</span
 					>
-					at <Link href="https://jackpocket.com/">Jackpocket</Link>
+					at <Link href="https://jackpocket.com/">Jackpocket</Link>.
 				</li>
 				<li class="ml-8">
 					Unifying the search and filtering experience across the shop pages as a <span
 						class="font-semibold text-red-600">Senior Software Engineer</span
 					>
-					at <Link href="https://www.leafly.com/">Leafly</Link>
+					at <Link href="https://www.leafly.com/">Leafly</Link>.
 				</li>
 				<li class="ml-8">
 					Leading the 0 to 1 project to build next generation of financial reporting products as a <span
 						class="font-semibold text-red-600">Senior Software Engineer</span
 					>
-					at <Link href="https://www.debtbook.com/">Debtbook</Link>
+					at <Link href="https://www.debtbook.com/">Debtbook</Link>.
 				</li>
 			</ul>
 		</div>
