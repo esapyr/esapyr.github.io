@@ -4,11 +4,14 @@
 	import { base } from '$app/paths';
 	import '../app.css';
 	import Link from '$lib/components/Link.svelte';
+	import Analytics from '$lib/analytics.svelte';
 
 	let { children } = $props();
 </script>
 
 <main class="m-auto my-15 flex w-2/3 flex-row">
+	<Analytics />
+
 	<div
 		class=" text-white-600 sticky top-10 flex w-1/4 flex-col items-center self-start rounded-l-lg"
 	>
