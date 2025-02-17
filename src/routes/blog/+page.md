@@ -1,2 +1,4 @@
-# Recent Blog Posts
-- [My Toolbox](/esapyr.github.io/blog/first_post)
+---
+title: 'Blog Posts'
+---
+- [Hello, World!](/blog/hello_world)
