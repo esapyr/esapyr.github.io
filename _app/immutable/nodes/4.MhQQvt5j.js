@@ -1,1 +1,0 @@
-import{t as a,a as p}from"../chunks/Cuun4bS0.js";import"../chunks/CrPrkb7d.js";import{L as e}from"../chunks/BK5qXZnv.js";var m=a("<h1>Recent Blog Posts</h1> <p>Coming Soon!</p>",1);function i(o){var t=m();e(2),p(o,t)}export{i as component};
