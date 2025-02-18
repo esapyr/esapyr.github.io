@@ -1,26 +1,39 @@
 <script lang="ts">
-	import Article from '$lib/components/Article.svelte';
 	import Link from '$lib/components/Link.svelte';
 	import { Hand } from 'lucide-svelte';
 </script>
 
-<Article color="green" autostyled={false}>
-	<div class="flex flex-col gap-3">
+<article class="pr-4 pb-4">
+	<div class="flex flex-col gap-6">
 		<div class="flex flex-row items-center gap-1 text-center">
 			<h1 class="text-3xl font-bold">
 				Hey there, my name is <i class="font-semibold text-red-600">Ryan Serazin</i>
 			</h1>
 			<Hand size={32} class="rotate-45 pl-2" />
 		</div>
+
 		<p class="text-lg">
 			I'm a Senior Full Stack Engineer currently based out of <Link
 				external
 				href="https://rocwiki.org/">Rochester, NY</Link
-			> with over ten years of experience builds products for the web.
+			> with over ten years of experience building products for the web.
+		</p>
+
+		<p class="text-lg">
+			I've most recently been developing in Ruby (with Rails) and Typescript, but love using
+			functional languages like Clojure and Elixir when I get the chance.
+		</p>
+
+		<p class="text-lg">
+			In my free time I enjoy playing <Link
+				external
+				href="https://app.utrsports.net/profiles/4862505">tennis</Link
+			> both socially and competively at my local club, have spent the last few years learning how to
+			woodwork with power and hand tools, and have a deep love for strategy and board games.
 		</p>
 
 		<div>
-			<p class="text-lg">Some of my past experience includes:</p>
+			<p class="text-lg">Some of my past work experience includes:</p>
 			<ul class="list-disc">
 				<li class="ml-8">
 					Building inventory tracking tools in ASP.net as an <span
@@ -80,14 +93,5 @@
 				</li>
 			</ul>
 		</div>
-
-		<p class="text-lg">
-			In my free time I enjoy playing <Link
-				external
-				href="https://app.utrsports.net/profiles/4862505">tennis</Link
-			> both socially and competively at my local club, and have spent the last few years learning how
-			to woodwork with power and hand tools. I also have a deep love and appreciation for strategy and
-			board games.
-		</p>
 	</div>
-</Article>
+</article>

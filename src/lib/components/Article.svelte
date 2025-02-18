@@ -5,17 +5,13 @@
 </script>
 
 <script lang="ts">
-	let { children, title, publishedOn, color = 'blue', autostyled = true } = $props();
-	const colors = { blue: 'border-blue-400', green: 'border-green-500' };
-	const borderColor = colors[color];
+	let { children, title, publishedOn = null, autostyled = true, tags = [] } = $props();
 </script>
 
-<div class={`bg-offwhite-500 w-3/4 border-l-10 p-5 md:rounded-r-lg ${borderColor}`}>
-	<article class={autostyled ? 'prose' : ''}>
-		{#if title}
-			<ArticleHeader {title} {publishedOn} />
-		{/if}
+<article class={autostyled ? 'prose' : ''}>
+	{#if title}
+		<ArticleHeader {tags} {title} {publishedOn} />
+	{/if}
 
-		{@render children()}
-	</article>
-</div>
+	{@render children()}
+</article>
