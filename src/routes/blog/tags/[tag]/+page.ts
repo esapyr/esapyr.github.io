@@ -1,3 +1,5 @@
+import type { EntryGenerator } from './$types';
+
 export const load = async ({ fetch, params }: { fetch: any, params: { tag: string } }) => {
   const { tag } = params;
   const response = await fetch(`/api/blog`);
@@ -10,3 +12,12 @@ export const load = async ({ fetch, params }: { fetch: any, params: { tag: strin
     posts
   };
 };
+
+export const entries: EntryGenerator = () => {
+  return [
+    { tag: 'blog' },
+    { tag: 'tailwind' },
+    { tag: 'svelte' },
+    { tag: 'gh-pages' },
+  ];
+}

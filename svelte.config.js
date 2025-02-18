@@ -16,6 +16,9 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
+		prerender: {
+			handleHttpError: 'ignore'
+		},
 		paths: {
 			base: process.env.NODE_ENV === 'production' ? '/esapyr.github.io' : ''
 		}

@@ -1,11 +1,11 @@
 export const fetchBlogPosts = async () => {
-  const allPostFiles = import.meta.glob('/src/routes/blog/posts/*.md');
+  const allPostFiles = import.meta.glob('/src/routes/blog/*.md');
   const iterablePostFiles = Object.entries(allPostFiles);
 
   const allPosts = await Promise.all(
     iterablePostFiles.map(async ([path, resolver]) => {
       const { metadata } = await resolver();
-      const postPath = path.slice(11, -3).replace("/posts", "");
+      const postPath = path.slice(11, -3);
 
       if (!metadata.publishedOn) {
         return null

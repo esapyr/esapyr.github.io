@@ -10,3 +10,5 @@ export const GET = async () => {
 
   return json(sortedPosts);
 };
+
+export const prerender = true;
