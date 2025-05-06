@@ -1,6 +1,7 @@
 import adapter from '@sveltejs/adapter-static';
-import { mdsvex } from 'mdsvex';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import { mdsvex } from 'mdsvex';
+import remarkFootnotes from 'remark-footnotes';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -11,7 +12,11 @@ const config = {
 	// for more information about preprocessors
 	preprocess: [
 		vitePreprocess(),
-		mdsvex({ layout: join(__dirname, 'src/lib/components/Article.svelte'), extensions: ['.md'] })
+		mdsvex({
+			layout: join(__dirname, 'src/lib/components/Article.svelte'),
+			extensions: ['.md'],
+			remarkPlugins: [[remarkFootnotes, { inlineNotes: true }]]
+		})
 	],
 
 	kit: {

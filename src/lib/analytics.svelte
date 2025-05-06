@@ -1,3 +1,4 @@
+<!--
 <script lang="ts">
 	import { page } from '$app/state';
 	const measurementID = 'G-B2DFRZV5HD';
@@ -27,3 +28,4 @@
 		gtag('config', measurementID);
 	</script>
 </svelte:head>
+-->

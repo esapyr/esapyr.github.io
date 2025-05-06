@@ -6,22 +6,19 @@
 		const charCode = tagName[0].charCodeAt(0);
 
 		if (charCode >= 97 && charCode <= 101) {
-			return 'bg-blue-200';
+			return 'text-blue-700';
 		} else if (charCode >= 102 && charCode <= 106) {
-			return 'bg-green-200';
+			return 'text-green-700';
 		} else if (charCode >= 107 && charCode <= 111) {
-			return 'bg-red-200';
+			return 'text-red-700';
 		} else if (charCode >= 112 && charCode <= 116) {
-			return 'bg-yellow-200';
+			return 'text-yellow-700';
 		} else if (charCode >= 117 && charCode <= 122) {
-			return 'bg-purple-200';
+			return 'text-purple-700';
 		}
 	};
 </script>
 
-<a
-	href={`/blog/tags/${name}`}
-	class={`rounded border p-[0.25rem] text-xs italic ${findColor(name)}`}
->
+<a href={`/blog/tags/${name}`} class={`text-xs italic ${findColor(name)}`}>
 	#{name}
 </a>

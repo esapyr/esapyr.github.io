@@ -1,5 +1,5 @@
 <script lang="ts">
-	const { href, children, external = false, underline = true } = $props();
+	const { href, children, external = false, underline = false } = $props();
 	import { base } from '$app/paths';
 	const link = external ? href : `${base}${href}`;
 </script>

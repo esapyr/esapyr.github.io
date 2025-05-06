@@ -20,11 +20,6 @@
 		</p>
 
 		<p class="text-lg">
-			I've most recently been developing in Ruby (with Rails) and Typescript, but love using
-			functional languages like Clojure and Elixir when I get the chance.
-		</p>
-
-		<p class="text-lg">
 			In my free time I enjoy playing <Link
 				external
 				href="https://app.utrsports.net/profiles/4862505">tennis</Link

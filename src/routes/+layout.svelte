@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Linkedin, Github, Send } from 'lucide-svelte';
+	import { AtSign, Linkedin, Github, Send } from 'lucide-svelte';
 
 	import '../app.css';
 
@@ -33,10 +33,10 @@
 		<div class="w-full">
 			<div class="border-white-700 flex w-full flex-row justify-between border-l p-2">
 				<Link external href="mailto:ryan@seraz.in"><Send color="#f49092" /></Link>
-				<Link external href="https://github.com/esapyr"><Github color="#ffd685" /></Link>
-				<Link external href="https://www.linkedin.com/in/ryan-serazin"
-					><Linkedin color="#84add6" /></Link
+				<Link external href="https://bsky.app/profile/ryan.seraz.in"
+					><AtSign color="#84add6" /></Link
 				>
+				<Link external href="https://github.com/esapyr"><Github color="#ffcc66" /></Link>
 			</div>
 
 			<ul class="w-full text-center">
@@ -56,7 +56,7 @@
 	</div>
 
 	<!-- Content -->
-	<div class={`bg-offwhite-500 border-l-10 ${borderColor} w-[55rem] p-5 md:rounded-r-lg`}>
+	<div class={`bg-offwhite-500 border-l-10 ${borderColor} w-[55rem] p-4 md:rounded-r-lg`}>
 		{@render children()}
 	</div>
 </main>

@@ -5,12 +5,19 @@
 </script>
 
 <script lang="ts">
-	let { children, title, publishedOn = null, autostyled = true, tags = [] } = $props();
+	let {
+		children,
+		title,
+		subtitle = null,
+		publishedOn = null,
+		autostyled = true,
+		tags = []
+	} = $props();
 </script>
 
-<article class={autostyled ? 'prose' : ''}>
+<article class={autostyled ? 'prose prose-a:no-underline prose-h2:my-4 prose-h3:my-2' : ''}>
 	{#if title}
-		<ArticleHeader {tags} {title} {publishedOn} />
+		<ArticleHeader {tags} {title} {publishedOn} {subtitle} />
 	{/if}
 
 	{@render children()}
